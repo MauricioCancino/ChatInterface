@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+
+  background-color: #f8d0b5;
+
+}
+
+nav {
+  background-color: #F99B7D;
+  display: flex;
+  justify-content: flex-start;
+  height: 45px;
+  grid-area: navbar;
+  align-items: center;
+  width: 100%;
+  padding-left: 15px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  width: 15.625rem;
+  justify-content: space-between;
+  padding-left: 15px;
+}
+
+
+nav ul li a {
+  color: #FFEBEB;
+  text-decoration: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li a:hover {
+  background-color: #E76161;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: solid 1px black;
+}
+
+.menu {
+  width: 0px;
+  height: 0px;
+
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "navbar navbar"
+    "aside main";
+  grid-template-columns: 2fr 4fr;
+  grid-template-rows: 1fr;
+  height: calc(100vh- 45px);
+}
+
+.aside {
+  grid-area: aside;
+  background-image: url(https://static.wikia.nocookie.net/b5baceae-5467-4c43-a8b9-e89dfe011c02/scale-to-width/755);
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+.main {
+
+  grid-area: main;
+  background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0858a3e3-9a9b-4be0-8875-33bc54e76861/degsdx1-c83b21df-eff3-4fea-8408-8bdc96ac27b5.png/v1/fill/w_800,h_450/hu_tao_ghost__genshin_impact__by_desquishyfish_degsdx1-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NDUwIiwicGF0aCI6IlwvZlwvMDg1OGEzZTMtOWE5Yi00YmUwLTg4NzUtMzNiYzU0ZTc2ODYxXC9kZWdzZHgxLWM4M2IyMWRmLWVmZjMtNGZlYS04NDA4LThiZGM5NmFjMjdiNS5wbmciLCJ3aWR0aCI6Ijw9ODAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.5oqjpFqJIKy0BcxptHirvlQoHT7Mif9Gz-BXGkoMqeU);
+  justify-content: center;
+  background-size: cover;
+}
+
+.chat-user {
+  font-size: 1.875rem;
+  display: flex;
+  align-items: center;
+  border: solid 2px black;
+  border-radius: 8px;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+
+}
+
+#chat-bg {
+  background-color: #F0EDD4;
+  opacity: 75%;
+}
+
+.user-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: solid 2px black;
+  margin: 15px;
+  background-color: #FFEBEB;
+}
+
+#dropdown {
+  flex-grow: 1;
+  text-align: end;
+  padding-right: 15px;
+}
+
+.card-chat {
+  display: inline-flex;
+  font-size: 1.375rem;
+  align-items: center;
+
+}
+
+.card-chat p {
+  border-color: black;
+  border: solid 0.0625rem;
+  border-radius: 0.625rem;
+  margin: 0.625rem;
+  padding: 0.625rem;
+}
+
+.date {
+  font-size: 1rem;
+  padding-left: 20px;
+}
+
+.span-date {
+  display: flex;
+  justify-content: end;
+}
+
+.hour {
+  font-size: 0.875rem;
+  padding-left: 15px;
+}
+
+.emisor {
+  background-color: #F6F1E9;
+}
+
+.receptor {
+  background-color: #F0EDD4;
+}
+
+.button {
+  transition-duration: 0.4s;
+  margin: 0.9375rem;
+  padding: 0.625rem;
+  border-radius: 0.5rem;
+}
+
+.button:hover {
+  background-color: #FF8400;
+  color: whitesmoke;
+}
+
+
+#send-section {
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+}
+
+.send-text {
+  border-color: black;
+  border: solid 0.0625rem;
+  border-radius: 0.625rem;
+  margin: 0.625rem;
+  padding: 0.625rem;
+  width: 85%;
+  background-color: whitesmoke;
+}
+
+
+@media screen and (max-width: 768px) {
+  .logo {
+    display: none;
+  }
+
+  .aside {
+    display: none;
+  }
+
+  .main {
+    width: 100%;
+  }
+
+  .card-chat {
+    display: inline-flex;
+    font-size: 1.375rem;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .card-chat p {
+    border-color: black;
+    border: solid 0.0625rem;
+    border-radius: 0.625rem;
+    margin: 0.625rem;
+    padding: 0.625rem;
+  }
+
+  nav {
+    background-color: #F99B7D;
+    display: flex;
+    justify-content: flex-start;
+    height: 40px;
+    grid-area: navbar;
+    align-items: center;
+    width: 100%;
+    padding-left: 15px;
+  }
+
+  .container {
+    display: grid;
+    grid-template-areas:
+      "navbar"
+      "main";
+    grid-template-columns: 4fr;
+
+  }
+
+  #dropdown {
+    flex-grow: 1;
+    text-align: end;
+    padding-right: 15px;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .menu {
+    width: 20px;
+    height: 20px;
+  }
+}

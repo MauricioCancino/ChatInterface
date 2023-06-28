@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interfaz de chat</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav>
+
+        <img src="https://img.icons8.com/ios_filled/12x/genshin-impact-logo.png" alt="logo" class="logo">
+
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Contactos</a></li>
+            <li><a href="#">Grupos</a></li>
+            <li><a href="#">Archivos</a></li>
+        </ul>
+        <img src="assets/menu.png" alt="logo" class="menu">
+    </nav>
+
+    <div class="container">
+        <aside class="aside"">
+
+            <div class=" card-chat" id="send-section">
+            <input type="text" class="send-text" value=" Contactos"></input>
+            <input type="button" value="Buscar" class="button">
+    </div>
+
+    <div class="chat-user" id="chat-bg">
+        <hr>
+        <img src="https://cdn.wanderer.moe/genshin-impact/character-icons/avataricon-kaveh.png" alt="Kaveh"
+            class="user-img">
+        <p> <b>Kaveh </b> </p>
+        <div class="span">
+            <span class="date"> 22/04/2023</span>
+        </div>
+        <hr>
+    </div>
+
+    <div class="chat-user" id="chat-bg">
+        <hr>
+        <img src="https://cdn.wanderer.moe/genshin-impact/character-icons/kaedehara-kazuha-icon.png" alt="Kazuha"
+            class="user-img">
+        <p> <b>Kazuha </b> </p>
+        <div class="span">
+            <span class="date"> 21/04/2023</span>
+        </div>
+        <hr>
+    </div>
+
+    <div class="chat-user" id="chat-bg">
+        <hr>
+        <img src="https://cdn.wanderer.moe/genshin-impact/character-icons/gorou-icon.png" alt="Gorou" class="user-img">
+        <p> <b>Gorou </b> </p>
+        <div class="span">
+            <span class="date"> 21/04/2023</span>
+        </div>
+        <hr>
+    </div>
+
+    <div class="chat-user" id="chat-bg">
+        <hr>
+        <img src="https://cdn.wanderer.moe/genshin-impact/character-icons/nahida-icon.png" alt="Nahida"
+            class="user-img">
+        <p> <b>Nahida </b> </p>
+        <div class="span">
+            <span class="date"> 20/04/2023</span>
+        </div>
+        <hr>
+    </div>
+
+    <div class="chat-user" id="chat-bg">
+        <hr>
+        <img src="https://cdn.wanderer.moe/genshin-impact/character-icons/yae-miko-icon.png" alt="Yae Miko"
+            class="user-img">
+        <p> <b>Yae Miko </b> </p>
+        <div class="span-date">
+            <span class="date"> 20/04/2023</span>
+        </div>
+        <hr>
+    </div>
+
+    </aside>
+
+    <main class="main">
+
+        <div class="chat-user">
+            <hr>
+            <img src="https://cdn.wanderer.moe/genshin-impact/character-icons/avataricon-kaveh.png" alt="Kaveh"
+                class="user-img">
+            <p> <b>Kaveh</b> </p>
+
+            <div id="dropdown">
+                <form action="/action_page.php">
+                    <select name="opciones">
+                        <option value="none"> </option>
+                        <option value="img">Imágen</option>
+                        <option value="audio">Audio</option>
+                        <option value="contact">Contacto</option>
+                        <option value="doc">Documento</option>
+                    </select>
+            </div>
+            <hr>
+        </div>
+
+        <br>
+
+        <div class="card-chat">
+            <img src="https://cdn.wanderer.moe/genshin-impact/character-icons/avataricon-kaveh.png" alt="Kaveh"
+                class="user-img">
+            <p class="emisor">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo repellat rerum nobis.
+            </p>
+            <span class="hour">17:05</span>
+        </div>
+
+        <br>
+
+        <div class="card-chat">
+            <span class="hour">17:10</span>
+            <p class="receptor">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo repellat rerum
+                nobis.</p>
+            <img src="https://cdn.wanderer.moe/genshin-impact/character-icons/alhaitham-icon.png" alt="Alhaitham"
+                class="user-img">
+        </div>
+
+        <br>
+
+        <div class="card-chat">
+            <img src="https://cdn.wanderer.moe/genshin-impact/character-icons/avataricon-kaveh.png" alt="Kaveh"
+                class="user-img">
+            <p class="emisor">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo repellat rerum nobis.
+            </p>
+            <span class="hour">17:12</span>
+        </div>
+
+        <br>
+
+        <div class="card-chat">
+            <span class="hour">17:15</span>
+            <p class="receptor">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo repellat rerum
+                nobis.</p>
+            <img src="https://cdn.wanderer.moe/genshin-impact/character-icons/alhaitham-icon.png" alt="Alhaitham"
+                class="user-img">
+        </div>
+
+        <br>
+
+        <hr>
+
+        <div class="card-chat" id="send-section">
+
+            <i class="em em-studio_microphone" aria-role="presentation" aria-label=""></i>
+            <input type="text" class="send-text" value=" Escribe un mensaje aquí . . ."></input>
+            <input type="button" value="Enviar" class="button">
+        </div>
+
+    </main>
+    </div>
+
+    <!-- <script src="assets/script.js"></script> -->
+
+</body>
+
+</html>
